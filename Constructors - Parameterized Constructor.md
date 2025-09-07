@@ -22,11 +22,24 @@ To write a Python code to create a class for a person with a parameterized const
 ---
 
 ### PROGRAM
-
 ```
-
+class addition:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+    def summation(self):
+        return self.a + self.b
+a=int(input())
+b=int(input())
+result = addition(a,b)
+print(f"First number = {a}")
+print(f"Second number = {b}")
+print("Addition of two numbers =",result.summation())
 ```
-
 ### OUTPUT
 
+<img width="842" height="373" alt="image" src="https://github.com/user-attachments/assets/b00fa424-1f79-4be8-8fc7-8aad98102a1c" />
+
 ### RESULT
+
+Thus, the python code is written and executed successfully.
