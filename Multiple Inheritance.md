@@ -30,16 +30,34 @@ To write a Python program to get the name, attendance, and ID of a student and c
 ---
 
 ### PROGRAM
-
 ```
-
+class Student:
+    def __init__(self, name, student_id, attendance):
+        self.name = name
+        self.student_id = student_id
+        self.attendance = attendance
+class Eligibility:
+    def check_eligibility(self, attendance):
+        if attendance > 80:
+            return "Eligible for Module Exam"
+        else:
+            return "Not Eligible for Module Exam"
+class StudentEligibility(Student, Eligibility):
+    def display(self):
+        eligibility = self.check_eligibility(self.attendance)
+        print(self.name)
+        print(self.student_id)
+        print(eligibility)
+name = input()
+student_id = int(input())
+attendance = int(input())
+student = StudentEligibility(name, student_id, attendance)
+student.display()
 ```
-
 ### OUTPUT
 
+<img width="823" height="307" alt="image" src="https://github.com/user-attachments/assets/b7d9bc8d-6d70-41a7-8a75-4c87db7ff7d8" />
 
 ### RESULT
 
-
-
-
+Thus, the python code is written and executed successfully.
