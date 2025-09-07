@@ -28,13 +28,26 @@ To write a Python program to get the employee and doctor details and display the
 
 ### PROGRAM
 ```
-
-
+class Value:
+    def __init__(self,mul1,mul2):
+        self.mul1 = mul1
+        self.mul2 = mul2
+    def display(self):
+        print(" multiplication value1 : ",self.mul1)
+        print(" multiplication value2 : ",self.mul2)
+class Result(Value):
+    def final(self):
+        self.display()
+        print(" Multiplied value :",self.mul1 * self.mul2)
+mul1 = int(input())  
+mul2 = int(input())  
+obj = Result(mul1,mul2)
+obj.final()
 ```
-
 ### OUTPUT  
 
-(Output Screenshot)  
-
+<img width="827" height="220" alt="image" src="https://github.com/user-attachments/assets/9dc4fe6a-4ff7-465e-8c75-d47877aeb0d7" />
 
 ### RESULT
+
+Thus, the python code is written and executed successfully.
