@@ -20,12 +20,18 @@ To create a Python class `Student` with a destructor.
 ---
 
 ### PROGRAM
-
 ```
-
+class Employee:
+	def __init__(self):
+		print('Employee created.')
+	def __del__(self):
+		print('Destructor called, Employee deleted.')
+obj = Employee()
+del obj
 ```
-
 ### OUTPUT
 
+<img width="835" height="267" alt="image" src="https://github.com/user-attachments/assets/03fd8dae-8222-48ed-bd29-7e0506c9ef37" />
 
 ### RESULT
+Thus, the python code is written and executed successfully.
